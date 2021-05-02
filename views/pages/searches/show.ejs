@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+<h1>the latest searches</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/new">search book</a>
+    </nav>
+
+
+    <main>
+        <% books.forEach(book => { %>
+            <div id="book">
+              <h2 id="title"><%= book.title %></h2>
+              <p id="auther"><%= book.auther %></p>
+              <p id="description"><%= book.description.slice(0, 100) %> ...</p>
+             
+            </div>
+            <% }) %>
+    </main>
 </body>
 </html>
