@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+
+
+
+
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/new">Search</a>
+  </nav>
+
+
+  <div>
+    <h3>Book Details</h3>
+  </div>
+
+  <div class="disp">
+    <img src="<%= single.image_url %>" alt="">
+    <h2>
+      <%=single.title%>
+    </h2>
+    <h4>
+      <%=single.author%>
+    </h4>
+    <p>
+      <%=single.description%>
+    </p>
+    <h6>
+      <%=single.ISBN%>
+    </h6>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

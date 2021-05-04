@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+
+  
+
+
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/new">Search</a>
+    </nav>
+
+
+
+    <h3>Total books: <%=data.length%>
+    </h3>
+
+    <% data.forEach(element=> { %>
+      <div>
+        <img src="<%= element.image_url %>" alt="">
+        <h2>
+          <%=element.title%>
+        </h2>
+        <h4>
+          <%=element.author%>
+        </h4>
+        <p>
+          <%=element.description%>
+        </p>
+        <p>
+          <%=element.ISBN%>
+        </p>
+
+        <form action="/books/<%=element.id%>">
+          <button id="showdetailsbtn" type="submit"> Show Details </button>
+        </form>
+      </div>
+      <% }) %>
+
+
+  
+
+
+  
+</body>
+
+</html>

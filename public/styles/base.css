@@ -1,71 +1,60 @@
+nav a{
+    font-family:fantasy;
+    font-size: 20px;
+    color: black;
+
+}
+
+
 body{
-background-color: cornflowerblue;
+    background-color: slategray;
+   
 }
 
 
-#indexh1{
-    color: black;
-   font-family: fantasy;
-   font-size:10vw
+#form{
+    width: 50%;
+    text-align: center;
+    background-color: gainsboro;
+    height: 200px;
 }
 
-#newh1{
-    color: black;
-   font-family: fantasy;
-   font-size:10vw
-}
-
-#showh1{
-    color: black;
-    font-size: 150px;
-   text-align: center;
-   font-family: fantasy;
-   font-size:10vw
-
-}
-
-body nav a{
-    color: black;
-    display: inline;
-    margin-right: 25px;
-    font-size: 40px;
+input{
+    font-size: 20px;
     font-family: fantasy;
-    font-size:10vw
-   
+    
+}
 
+#submitbtn{
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+h3{
+    font-family: fantasy;
+    margin-left: 250px;
+}
+
+span{
+    font-family: fantasy;
+}
+
+#showdetailsbtn{
+    font-family: fantasy;
+    box-shadow: lightseagreen;
+    border-radius: 2%;
+}
+
+#addtofavbtn{
+    font-family: fantasy;
+    box-shadow: lightseagreen;
+    border-radius: 2%;
 }
 
 
 
 
-#form_title{
-    font-size: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
-
-
-}
-
-#search_form{
-    background-color: rgb(124, 128, 136);
-   
-
-}
-
-
-
-#result {
-   
-    background-color: rgb(185, 181, 181);
-    color: black;
-    box-shadow: 7px 5px 5px -1px rgba(0,0,0,0.7);
-}
-
-#result #title {
-   
-    font-size: 30px;
-    color: white;
-    margin-top: 30px;
-   
-
+#booktitle{
+font-family: fantasy;
+font-size: 30px;
 }

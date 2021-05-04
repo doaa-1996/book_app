@@ -4,7 +4,7 @@
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-A full stack application allow you to search for a book using its name or its author and retrieve the book from Google Books API.
+A full stack application allow you to search for a book using its name or its author and retrieve the book from Google Books API .
 
 
 ## Getting Started
@@ -15,8 +15,8 @@ clone the repository using https://github.com/doaa-1996/book_app.git and install
 
 
 1. HTML,CSS and  node.js 
-2. Frameworks and libraries used: express, cors, ejs, dotenv, superagent, method-override
-3. PIs: Google Books API
+2. Frameworks and libraries used: express, cors, ejs, dotenv, superagent, postgress.
+3. APIs: Google Books API
 
 
 ## Change Log
@@ -25,3 +25,5 @@ clone the repository using https://github.com/doaa-1996/book_app.git and install
 
 02-05-2021 11:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource, and needs some CSS design.
 03-05-2021 11:00pm - Application Done .
+04-05-2021 12:58am - adding "add to favorite functionality"
+

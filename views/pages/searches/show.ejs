@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css" />
-
-    <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <h1 id="showh1">The latest searches</h1>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/new">search book</a>
-    </nav>
 
 
-    <main id="result">
-        <% books.forEach(book=> { %>
-            <div id="book">
-                <h2 id="title">
-                    <%= book.title %>
-                </h2>
-                <!-- <img src="<%= book.image %> " alt=""> -->
-                <p id="auther">
-                    <%= book.auther %>
-                </p>
-                <p id="description">
-                    <%= book.description.slice(0, 100) %> ...
-                </p>
-                <p>*****************************************************************************************************************************************************</p>
 
-            </div>
-            <% }) %>
-    </main>
+
+
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/new">Search</a>
+  </nav>
+
+
+
+  <% books.forEach(element=> { %>
+    <div>
+      <img src="<%= element.image_url %>" alt="">
+      <h2>
+        <%=element.title%>
+      </h2>
+      <h4>
+        <%=element.author%>
+      </h4>
+      <p>
+        <%=element.description%>
+      </p>
+      <p>
+        <%=element.ISBN%>
+      </p>
+
+      <form action="/books" method="POST">
+        <input type="hidden" name="image_url" value="<%= element.image_url %>">
+        <input type="hidden" name="title" value="<%=element.title%>">
+        <input type="hidden" name="author" value="<%=element.author%>">
+        <input type="hidden" name="description" value="<%=element.description%>">
+        <input type="hidden" name="ISBN" value="<%=element.ISBN%>">
+        <button id="addtofavbtn" type="submit"> Add to favorite </button>
+      </form>
+    </div>
+    <% }) %>
+
+
+
+
+
 </body>
 
 </html>
-
-
