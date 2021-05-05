@@ -3,13 +3,10 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
-
-
-
 
 
 
@@ -40,6 +37,20 @@
   </div>
 
 
+  <form action="/deleteBook/<%=single.id%>?_method=delete" method="POST" >
+    <button id="deletebtn">Delete book</button>
+  </form>
+  
+  <div id="updatediv">
+  <form action="/updateBook/<%=single.id%>?_method=put" method="POST">
+    <input type="text" name="image_url" value="<%= single.image_url %>">
+    <input type="text" name="title" value="<%=single.title%>">
+    <input type="text" name="author" value="<%=single.author%>">
+    <textarea name="description" cols="30" rows="10"><%=single.description %></textarea>
+    <input type="text" name="ISBN" value="<%=single.isbn%>">
+    <button id="updatebtn">Update book</button>
+  </form>
+</div>
 
 
 

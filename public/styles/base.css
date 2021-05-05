@@ -20,8 +20,8 @@ body{
 }
 
 input{
-    font-size: 20px;
-    font-family: fantasy;
+    font-size: 15px;
+  
     
 }
 
@@ -57,4 +57,47 @@ span{
 #booktitle{
 font-family: fantasy;
 font-size: 30px;
+}
+
+
+
+
+
+#deletebtn{
+    font-family: fantasy;
+    font-size: 20px;
+    border-radius: 2%;
+}
+
+#updatebtn{
+    font-family: fantasy;
+    font-size: 20px;
+    border-radius: 2%;
+}
+
+
+#updatediv{
+
+    width: 50%;
+    text-align: center;
+    background-color: gainsboro;
+    height: 200px;
+}
+
+
+input{
+    display: block;
+    margin: 30px 0px;
+}
+
+textarea{
+
+    margin-left: -270px;
+}
+
+
+#updatediv{
+width:500px;
+height: 450px;
+margin-left: 60px;
 }
