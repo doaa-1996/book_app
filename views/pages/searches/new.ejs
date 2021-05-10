@@ -7,39 +7,27 @@
 </head>
 
 <body>
-
-  
-
-    
-    
-      <nav >
-        <a href="/">Home</a>
-        <a href="/new">Search</a>
-      </nav>
-     
-    
-    <div>
-      <h3>Search by title or Author</h3>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/new">Search</a>
+  </nav>
+  <div>
+    <h3>Search by title or Author</h3>
+  </div>
+  <form id="form" action="/searches" method="POST">
+    <input type="text" name="name" placeholder="Enter a title or Author">
+    <div class="input_radio">
+      <span>Title</span>
+      <input type="radio" name="choose" value="intitle">
+      </label>
     </div>
-
-    <form id="form" action="/searches" method="POST">
-      <input type="text" name="name" placeholder="Enter a title or Author">
-      <div class="input_radio">
-        <span>Title</span>
-        <input type="radio" name="choose" value="intitle">
-        </label>
-      </div>
-      <div class="input_radio">
-        <span>Author</span>
-        <input type="radio" name="choose" value="inauthor">
-        </label>
-      </div>
-      <button id="submitbtn">Search the Google Books API</button>
-    </form>
-  
-
-
-
+    <div class="input_radio">
+      <span>Author</span>
+      <input type="radio" name="choose" value="inauthor">
+      </label>
+    </div>
+    <button id="submitbtn">Search the Google Books API</button>
+  </form>
 </body>
 
 </html>

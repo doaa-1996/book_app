@@ -7,19 +7,10 @@
 </head>
 
 <body>
-
-
-
-
-
-
   <nav>
     <a href="/">Home</a>
     <a href="/new">Search</a>
   </nav>
-
-
-
   <% books.forEach(element=> { %>
     <div>
       <img src="<%= element.image_url %>" alt="">
@@ -35,7 +26,6 @@
       <p>
         <%=element.ISBN%>
       </p>
-
       <form action="/books" method="POST">
         <input type="hidden" name="image_url" value="<%= element.image_url %>">
         <input type="hidden" name="title" value="<%=element.title%>">
@@ -46,11 +36,6 @@
       </form>
     </div>
     <% }) %>
-
-
-
-
-
 </body>
 
 </html>
